@@ -1,0 +1,43 @@
+.photo-catalog__review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 20px;
+  padding: 26px 17px 26px;
+  background-color: rgba(242, 242, 242, 1);
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+  @media (min-width: @tablet-width) {
+    width: auto;
+    flex-grow: 1;
+    margin: 0;
+    padding: @top-margin-panorama 30px 31px;
+  }
+}
+
+.photo-catalog__item--daily-pan .photo-catalog__review {
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0 20px;
+    padding: 30px 30px 32px;
+  }
+}
+
+.photo-catalog__review cite {
+  margin-right: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  font-style: normal;
+  text-decoration: none;
+}
+.photo-catalog__last-vist {
+  color: rgba(40, 54, 69, 1);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+}
+

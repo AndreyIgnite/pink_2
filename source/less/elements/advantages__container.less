@@ -1,0 +1,24 @@
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 4%;
+    padding-top: 47px;
+    flex-direction: row;
+    align-items: end;
+    background-image: url(../img/grey_background_tablet.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  @media (min-width: 1080px) {
+    background-image: none;
+    flex-direction: column;
+    width: 87%;
+    max-width: @max-width;
+    padding: 0;
+    margin-bottom: 59px;
+  }
+}

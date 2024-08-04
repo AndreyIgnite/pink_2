@@ -1,0 +1,24 @@
+.adventages__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 46px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media (min-width: @tablet-width) {
+  .advantages__intro br {
+    display: none;
+  }
+  .adventages__header-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (min-width: 1080px) {
+  .adventages__header-wrapper {
+    width: 87%;
+    max-width: @max-width;
+  }
+}

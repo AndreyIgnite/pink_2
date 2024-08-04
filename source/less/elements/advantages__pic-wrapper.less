@@ -1,0 +1,30 @@
+.advantages__pic-wrapper {
+  position: relative;
+  height: 320px;
+  width: 157px;
+  margin-bottom: -36px;
+  background-image: url(../img/hello-phone/iphone-3.png);
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hello-phone/iphone-3@2x.png);
+  }
+  background-repeat: no-repeat;
+  background-size: 157px auto;
+}
+@media (min-width: @tablet-width) {
+  .advantages__pic-wrapper {
+    order: 0;
+    height: 481px;
+    width: 268px;
+    margin-bottom: 0;
+    background-image: url(../img/hello-phone/iphone3-tablet.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hello-phone/iphone3-tablet@2x.png);
+    }
+    background-size: 268px auto;
+  }
+}
+@media (min-width: 1080px) {
+  .advantages__pic-wrapper {
+    display: none;
+  }
+}

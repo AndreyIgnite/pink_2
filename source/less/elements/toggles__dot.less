@@ -1,0 +1,25 @@
+.toggles__dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: fade(rgba(40, 54, 69, 1), 30%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.toggles__dot:hover {
+  @media (min-width: @desktop-width) {
+  background-color: fade(rgba(40, 54, 69, 1), 50%);
+  }
+}
+.toggles__dot:active {
+  background-color: fade(rgba(40, 54, 69, 1), 10%);
+}
+.toggles__dot--current {
+  background-color: transparent;
+  outline: 3px solid rgba(40, 54, 69, 1);
+}
+.toggles__dot--current:hover, .toggles__dot--current:active {
+  background-color: rgba(255, 255, 255, 1);
+}

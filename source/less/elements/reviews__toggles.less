@@ -1,0 +1,32 @@
+.reviews .swiper-pagination {
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+  .centerX();
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: #283645;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-horizontal-gap: 0;
+  --swiper-pagination-bullet-width: 6px;
+  --swiper-pagination-bullet-height: 6px;
+  @media (min-width: @tablet-width) {
+    bottom: 4px;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.reviews .swiper-pagination-bullet {
+  transition: all 0.2s;
+}
+
+.reviews .swiper-pagination-bullet-active {
+  outline: 3px solid rgba(40, 54, 69, 1);
+}
+
+.reviews__toggles {
+  @media (min-width: @tablet-width) {
+    bottom: 0px;
+  }
+}

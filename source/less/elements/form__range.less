@@ -1,0 +1,31 @@
+.form__range {
+  padding-bottom: 34px;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.range {
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+}
+.range__range-scale {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+.scale {
+  height: 2px;
+  background-color: rgba(40, 54, 69, 1);
+}
+.scale__button-value {
+  display: block;
+  position: absolute;
+  top: -5px;
+  //left: 80%;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(210, 40, 86, 1);
+  border-radius: 50%;
+}

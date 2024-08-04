@@ -1,0 +1,39 @@
+.product__head {
+  position: relative;
+  padding-top: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #283645;
+  color: white;
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
+  }
+}
+.product__head--hit {
+  background-image: url(../img/hit_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top left;
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/hit_tablet.svg);
+  }
+}
+.product__head--hit::before {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 14px;
+  content: "хит";
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  @media (min-width: @tablet-width) {
+    top: 16px;
+    left: 11px;
+  }
+
+}

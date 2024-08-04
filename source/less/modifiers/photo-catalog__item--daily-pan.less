@@ -1,0 +1,53 @@
+@media (min-width: @tablet-width) {
+  .photo-catalog__item--daily-pan {
+    grid-column: 1 / -1;
+    order: -1;
+    margin-bottom: 30px;
+    //grid-row: 1 / 2;
+    background-color: white;
+  }
+  .photo-catalog__item--daily-pan:nth-child(odd) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .photo-catalog__item--daily-pan:nth-child(even) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .photo-catalog__item--daily-pan .photo-catalog__like {
+    position: absolute;
+    top: @top-margin-panorama;
+    right: @right-margin-panorama;
+  }
+}
+.photo-catalog__item--daily-pan .photo-catalog__img-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.photo-catalog__item--daily-pan::before {
+  position: absolute;
+  z-index: 10;
+  padding: 13px 19px 14px;
+  top: 0;
+  right: 6.5%;
+  content: "панорама дня";
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  width: 140px;
+  background-color: rgba(210, 40, 86, 1);
+  @media (min-width: @tablet-width) {
+    top: 57px;
+    right: 3%;
+  }
+  @media (min-width: @desktop-width) {
+
+  }
+}

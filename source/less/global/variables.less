@@ -1,0 +1,38 @@
+@download__title: 58px;
+@download__main-img: 286px;
+
+@mobile-width-only: 659px;
+@mobile-and-tablet-width-only: 1079px;
+@tablet-width: 660px;
+@desktop-width: 1080px;
+@m: #d22856;
+@max-width: 1100px;
+@top-margin-panorama:  30px;
+@right-margin-panorama: 30px;
+
+//mixins
+
+.centerX() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.containerDesktop() {
+  width: 94%;
+  max-width: @max-width;
+  margin: 0 auto;
+}
+
+.triangle(@_; @size; @color) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @size;
+  border-color: @color;
+}
+
+.triangle(right-top; @size; @color) {
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-style: none;
+}

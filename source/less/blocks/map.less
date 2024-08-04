@@ -1,0 +1,22 @@
+// .map {
+// }
+.map img {
+  width: 100%;
+}
+.map_mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.map_tablet {
+  display: none;
+  @media (min-width: @tablet-width) and (max-width: 1079px) {
+    display: block;
+  }
+}
+.map_desktop {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

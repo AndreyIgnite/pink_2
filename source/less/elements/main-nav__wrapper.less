@@ -1,0 +1,30 @@
+.main-nav--opened .main-nav__wrapper {
+  @media (max-width: @mobile-and-tablet-width-only) {
+    position: absolute;
+    z-index: 15;
+    right: 0;
+    left: 0;
+  }
+  @media (max-width: @mobile-width-only) {
+    top: 66px;
+  }
+  @media (min-width: @tablet-width) and (max-width: @mobile-and-tablet-width-only) {
+    top: 110px;
+  }
+}
+.main-nav--closed .main-nav__wrapper {
+  @media (max-width: @mobile-and-tablet-width-only) {
+    display: none;
+  }
+}
+@media (max-width: @mobile-and-tablet-width-only) {
+  .main-nav--no-js .main-nav__wrapper {
+    display: block;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    margin-left: auto;
+    max-width: 75%;
+  }
+}

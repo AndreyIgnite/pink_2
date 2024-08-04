@@ -1,0 +1,27 @@
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 4% 0;
+  color:rgba(40, 54, 69, 1);
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  @media (min-width: @tablet-width) {
+    padding: 55px 3% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding: 74px 6.5% 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+}
+.contacts__phone-number, .contacts__e-mail_link, .contacts__adress {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+}

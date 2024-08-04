@@ -1,0 +1,49 @@
+.download__main-img {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: @download__title + 40px + 23px;
+  height: @download__main-img;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url(../img/hand-phone/phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hand-phone/phone@2x.png);
+    background-size: 320px auto;
+  }
+}
+@media (min-width: @tablet-width) {
+  .download__main-img {
+    background-image: url(../img/hand-phone/phone-tablet.png);
+    background-size: 660px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone/phone-tablet@2x.png);
+
+    }
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    transform: none;
+    right: 0;
+    height: 545px;
+    width: 660px;
+    margin: 0;
+  }
+}
+@media (min-width: @desktop-width) {
+  .download__main-img {
+    height: 645px;
+    width: 920px;
+    background-image: url(../img/hand-phone/phone-desktop.png);
+    background-size: 1050px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone/phone-desktop@2x.png);
+    }
+    background-position: left;
+  }
+}

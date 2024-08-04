@@ -1,0 +1,42 @@
+.main-nav {
+  background-color: fade(black, 30%);
+  @media (max-width: @mobile-and-tablet-width-only) {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 66px;
+    color: white;
+  }
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+    padding: 0 4%;
+  }
+}
+.main-nav--opened {
+  @media (max-width: @mobile-and-tablet-width-only) {
+    background-color: #283645;
+    border-bottom: 1px solid black;
+  }
+}
+
+.main-nav--no-js {
+  @media (max-width: @mobile-and-tablet-width-only) {
+    display: block;
+    padding: 0;
+    padding-top: 66px;
+  }
+  @media (min-width: @tablet-width) and (max-width: @mobile-and-tablet-width-only) {
+    padding-top: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 87%;
+    max-width: @max-width;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+  }
+}

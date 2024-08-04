@@ -1,0 +1,26 @@
+.advantages__pic-screen {
+  height: 244px;
+  width: 136px;
+  position: absolute;
+  top: 38px;
+  left: 10px;
+  background-image: url(../img/hello-phone/iphone-screen-3.jpg);
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hello-phone/iphone-screen-3@2x.jpg);
+  }
+  background-size: 140px auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: @tablet-width) {
+  .advantages__pic-screen {
+    background-image: url(../img/hello-phone/iphone-screen-3-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hello-phone/iphone-screen-3-tablet@2x.jpg);
+    }
+    background-size: 241px auto;
+    height: 421px;
+    width: 237px;
+    top: 64px;
+    left: 15px;
+  }
+}

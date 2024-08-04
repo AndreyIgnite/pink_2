@@ -1,0 +1,45 @@
+.download__header-screen {
+  position: absolute;
+  top: 32px;
+  left: 104px;
+  height: 197px;
+  width: 111px;
+  background-image: url(../img/hand-phone/screen.jpg);
+  background-size: auto;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hand-phone/screen@2x.jpg);
+    background-size: 111px;
+  }
+  background-repeat: no-repeat;
+
+}
+
+@media (min-width: @tablet-width) {
+  .download__header-screen {
+    position: absolute;
+    top: 54px;
+    left: auto;
+    right: 94px;
+    height: 346px;
+    width: 195px;
+    background-image: url(../img/hand-phone/screen-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone/screen-tablet@2x.jpg);
+      background-size: 195px;
+    }
+  }
+}
+@media (min-width: 1080px) {
+  .download__header-screen {
+    position: absolute;
+    top: 65px;
+    right: 120px;
+    height: 408px;
+    width: 230px;
+    background-image: url(../img/hand-phone/screen-desktop.jpg);
+    background-size: 230px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone/screen-desktop@2x.jpg);
+    }
+  }
+}
